@@ -1,41 +1,79 @@
-title:              CheonKiO Blog
-email:              heelun8525@naver.com
-description:        A Blog Theme by OSS class
-author:             CheonKiO
-baseurl:            
-url:                "https://cheonkio.github.io"
-remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
+# Site settings
+title: OSS CheonKiO
+description: for OSS class.
+baseurl:  # the subpath of your site, e.g. /blog
+url: "https://CheonKiO.gihub.io/" # the base hostname & protocol for your site, e.g. http://example.com 
+remote_theme: artemsheludko/lokmont
 
-# Social Profiles
-twitter_username:   SBootstrap
-github_username:    StartBootstrap
-facebook_username:  StartBootstrap
-instagram_username:  1000.2.5
-linkedin_username:
+# Banner Section
+hero: school_view.png
+hero-title: 2020-2 OSS Project Team 8 CHEON-KIO
+hero-description: I'm 2020-2-OSS-8 Team'member. My team topic is the Psynoop or Tinykaboom project.
 
-# Add your google-analytics ID here to activate google analytics
-google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
+# Author - Creator
+author-name: CheonKiO
+author-image: team_8.jpg
+about-author: We are 2020-2-OSS-Team 8. We are interested in open-source project.
+author-email: help.example@gmail.com
+author-twitter: https://twitter.com/
+author-facebook: https://twitter.com/
+author-instagram: https://www.instagram.com/
+author-pinterest: https://pinterest.com/
 
-# Build settings
-markdown:           kramdown
-paginate:           5
-paginate_path:      "/posts/page:num/"
-plugins:
-  - jekyll-feed
-  - jekyll-paginate
-  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
+# Other Authors - here you can add Other authors. For example Natali_Braxton
+authors:
+  Natali_Braxton:
+    author-name: 
+    author-image: 
+    about-author: 
+    author-email: 
+    author-twitter: 
+    author-facebook: 
+    author-instagram: 
+    author-pinterest: 
 
-# Paginate
-paginate: 6
-paginate_path: /page:num/
+# Social Media Links (Links are located in hero and footer)
+twitter: https://twitter.com/
+facebook: https://facebook.com/
+google-plus: https://plus.google.com/
+instagram: https://www.instagram.com/
+pinterest: https://pinterest.com/
+youtube: https://www.youtube.com/
+
+# Contact Form Settings
+contact-subtitle: Pok pok listicle meggings, gluten-free deep v you probably haven't heard of them taxidermy iPhone gentrify seitan. Kogi cornhole enamel. # Title for the subscription form.
+
+# Google Analytics
+google-analytics: # Add your identifier. For example UA-99631805-1.
+
+# Newsletter
+mailchimp: # Add your MailChimp form identifier. For example - blogenjoyfreedom.us16.list-manage.com/subscribe/post?u=cd56155d76ddeeb4c0bc4d080&amp;id=7a526cd13e
+
+# Comment Section (Disqus)
+disqus-identifier: mr-brown # Add your shortname for Disqus Comment. For example mr-brown
 
 # Build settings
 markdown: kramdown
+permalink: pretty
+paginate: 9
+paginate_path: "/page/:num"
+
+# Pages path
+defaults:
+  - scope:
+      path: '_pages'
+    values:
+      permalink: /:basename:output_ext
 
 plugins:
   - jekyll-paginate
   - jekyll-feed
-  - jekyll-sitemap
 
-include: [_pages]
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock", "package-lock.json", "assets/css/sass/"]
+include:
+  - _pages
+
+# Exclude from processing.
+exclude:
+ - Gemfile
+ - Gemfile.lock
+ - vendor
