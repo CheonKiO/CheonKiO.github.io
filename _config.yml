@@ -1,38 +1,29 @@
-title: My personal blog - CheonKiO
-email: heelun8525@naver.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-permalink: ':title/'
-remote_theme: artemsheludko/adam-blog
-baseurl: 
-url: "https://cheonkio.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+title:              CheonKiO Blog
+email:              heelun8525@naver.com
+description:        A Blog Theme by OSS class
+author:             CheonKiO
+baseurl:            
+url:                "https://cheonkio.github.io"
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 
-# Author settings
-author: KiO Cheon # add your name
-author-pic: adam-face.jpg
-about-author: My name is KiO Cheon. I’m a full-time adventure travel blogger and photographer who’s been exploring the world for over 2 years.
+# Social Profiles
+twitter_username:   SBootstrap
+github_username:    StartBootstrap
+facebook_username:  StartBootstrap
+instagram_username:  1000.2.5
+linkedin_username:
 
-# Contact links
-email: # Add your Email address
-phone: # Add your Phone number
-website: # Add your website, do not add http://
-linkedin: # Add your Linkedin handle
-github: artemsheludko # Add your Github handle
-twitter: '@artemsheludko_' # Add your Twitter handle
-facebook: # Add your Facebook handle
-instagram: # Add your Instagram handle
-pinterest: # Add your Pinterest handle
+# Add your google-analytics ID here to activate google analytics
+google_analytics:   UA-XXXXXXXXX-X # out your google-analytics code
 
-# Newsletter
-mailchimp: # Add your MailChimp form identifier.
-
-# Disqus
-discus_identifier: mr-brown # Add your discus identifier
-
-# Tracker
-analytics: # Google Analytics
+# Build settings
+markdown:           kramdown
+paginate:           5
+paginate_path:      "/posts/page:num/"
+plugins:
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-sitemap ## Uncomment this line to silently generate a sitemaps.org compliant sitemap for your Jekyll site
 
 # Paginate
 paginate: 6
